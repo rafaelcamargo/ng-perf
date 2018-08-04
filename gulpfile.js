@@ -17,7 +17,7 @@ const fs = require('fs'),
   project = require('./project.json'),
   ENV_DEV = require('./environments/dev.json'),
   ENV_PROD = require('./environments/prod.json'),
-  ENV = argv.env == 'prod' ? ENV_PROD : ENV_DEV;
+  ENV = argv.env == 'prod' ? ENV_PROD : ENV_DEV,
   fingerprint = new Date().getTime();
 
 function revise(){
@@ -39,8 +39,6 @@ gulp.task('js:lib', () => {
 });
 
 gulp.task('js:app', () => {
-  console.log('SOURCE_MAPS', ENV.SOURCE_MAPS);
-  console.log('MINIFY', ENV.MINIFY);
   return gulp.src(project.scripts.source.files)
     .pipe(gulpif(ENV.SOURCE_MAPS, sourcemaps.init()))
     .pipe(concat(project.scripts.dist.filename))
@@ -83,7 +81,7 @@ gulp.task('html:templates', function () {
         return url.replace('/scripts', '');
       }
     }))
-    // .pipe(minify({mangle: false}))
+    .pipe(minify({mangle: false}))
     .pipe(gulp.dest(project.templates.dist.root));
 });
 
