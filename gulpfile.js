@@ -1,5 +1,6 @@
 const fs = require('fs'),
-  argv = require('yargs').argv,
+  { argv } = require('yargs'),
+  { exec } = require('child_process'),
   gulp = require('gulp'),
   gutil = require('gulp-util'),
   concat = require('gulp-concat'),
@@ -14,6 +15,7 @@ const fs = require('fs'),
   htmlmin = require('gulp-htmlmin'),
   rename = require('gulp-rename'),
   writefile = require('writefile'),
+  Server = require('karma').Server,
   project = require('./project.json'),
   ENV_DEV = require('./environments/dev.json'),
   ENV_PROD = require('./environments/prod.json'),
@@ -45,6 +47,15 @@ gulp.task('js:app', () => {
     .pipe(gulpif(ENV.MINIFY, minify({mangle: false}).on('error', gutil.log)))
     .pipe(gulpif(ENV.SOURCE_MAPS, sourcemaps.write()))
     .pipe(gulp.dest(project.scripts.dist.root));
+});
+
+gulp.task('js:test', function(done) {
+  exec('./node_modules/karma/bin/karma start', (err, stdout, stderr) => {
+    if(err)
+      console.log(err);
+    console.log(stdout);
+    done();
+  });
 });
 
 gulp.task('css:lib', function(){
@@ -167,5 +178,12 @@ gulp.task('start',
     'build:base',
     'serve',
     'watch'
+  )
+);
+
+gulp.task('test',
+  gulp.series(
+    'js:env',
+    'js:test'
   )
 );
