@@ -1,0 +1,14 @@
+<div class="card">
+  <h2 class="card-title"
+    ng-if="$ctrl.title"
+    data-card-title>
+    <nr-icon
+      data-icon="{{ $ctrl.icon }}"
+      ng-if="$ctrl.icon">
+    </nr-icon>
+    {{ $ctrl.title }}
+  </h2>
+  <div class="card-content" data-card-content>
+    <ng-transclude></ng-transclude>
+  </div>
+</div>
