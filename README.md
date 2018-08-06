@@ -1,7 +1,5 @@
-# Angular Rise
-Angular Rise is a starter kit for AngularJS applications structured on a component based architecture.
-
-[![CircleCI](https://circleci.com/gh/rafaelcamargo/ng-rise.svg?style=svg)](https://circleci.com/gh/rafaelcamargo/ng-rise)
+# Angular Performance
+> A controlled environment to make performance experiments on AngularJS 1.3.
 
 ## Contributing
 
@@ -9,20 +7,18 @@ Angular Rise is a starter kit for AngularJS applications structured on a compone
 
 2. Clone the repo:
 ``` bash
-git clone git@github.com:rafaelcamargo/ng-rise.git
+git clone git@github.com:rafaelcamargo/ng-perf.git
 ```
 
 3. Go to the project directory
 ``` bash
-cd ng-rise
+cd ng-perf
 ```
 
 4. Install the project dependencies
 ``` bash
 npm install
 ```
-
-**NOTE:** For speed reasons, we encourage the use of [yarn](https://yarnpkg.com/en/docs/install) over npm.
 
 5. If you want just build the project, run:
 ``` bash
