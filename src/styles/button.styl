@@ -1,0 +1,28 @@
+@require '_variables'
+@require '_mixins'
+
+button
+  &.button-primary
+    background-color $color-primary
+    color $color-lightest
+    border-color $color-primary
+    &:hover,
+    &:focus
+      background-color alpha($color-primary, .9)
+  &.button-mini
+    font-size $font-size-xxs
+    line-height 16px
+    padding 0 5px
+  &.button-circled
+      padding 0
+      min-width 0
+      width 30px
+      height 30px
+      background-color transparent
+      text-align center
+      border-radius 50%
+      .icon
+        position absolute
+        top 50%
+        left 50%
+        transform('translate(-50%,-50%)')
