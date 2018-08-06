@@ -13,7 +13,7 @@
     "start": "./node_modules/gulp/bin/gulp.js start",
     "serve": "./node_modules/gulp/bin/gulp.js serve",
     "test": "./node_modules/gulp/bin/gulp.js test",
-    "deploy": "./node_modules/karma/bin/firebase deploy --non-interactive"
+    "deploy": "./node_modules/firebase-tools/bin/firebase deploy --non-interactive"
   },
   "dependencies": {
     "angular-ui-router": "0.3.1",
