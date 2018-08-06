@@ -1,6 +1,9 @@
 # Angular Performance
 > A controlled environment to make performance experiments on AngularJS 1.3.
 
+[![CircleCI](https://circleci.com/gh/rafaelcamargo/ng-perf/tree/master.svg?style=svg)](https://circleci.com/gh/rafaelcamargo/ng-perf/tree/master)
+[![codecov](https://codecov.io/gh/rafaelcamargo/ng-perf/branch/master/graph/badge.svg)](https://codecov.io/gh/rafaelcamargo/ng-perf)
+
 ## Contributing
 
 1. Install [Node](https://nodejs.org/en/). Download the "Recommend for Most Users" version.
