@@ -5,10 +5,18 @@
     $stateProvider
       .state('welcome', {
         url: '/',
-        templateUrl: '/welcome/views/welcome/welcome-template.html',
+        templateUrl: '/welcome/views/welcome-template.html',
         appMenuItem: {
           text: 'Welcome',
           icon: 'ion-home'
+        }
+      })
+      .state('experiments', {
+        url: '/experiments',
+        templateUrl: '/experiments/views/experiments-template.html',
+        appMenuItem: {
+          text: 'Experiments',
+          icon: 'ion-erlenmeyer-flask'
         }
       });
 
