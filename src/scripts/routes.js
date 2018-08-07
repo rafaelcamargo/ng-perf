@@ -5,7 +5,7 @@
     $stateProvider
       .state('welcome', {
         url: '/',
-        templateUrl: '/views/welcome/welcome-template.html',
+        templateUrl: '/welcome/views/welcome/welcome-template.html',
         appMenuItem: {
           text: 'Welcome',
           icon: 'ion-home'
