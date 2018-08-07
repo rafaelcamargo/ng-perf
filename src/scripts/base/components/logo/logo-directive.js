@@ -5,7 +5,7 @@
     return {
       restrict: 'E',
       scope: {},
-      templateUrl: '/components/logo/logo-template.html'
+      templateUrl: '/base/components/logo/logo-template.html'
     }
   }
 

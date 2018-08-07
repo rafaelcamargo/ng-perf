@@ -1,21 +1,20 @@
 (function (){
   'use strict';
 
-  function cardDirective(){
+  function rowDirective(){
     return {
       restrict: 'E',
       transclude: true,
       scope: {
-        icon: '@',
-        title: '@'
+        cssClass: '@'
       },
       controller: function(){},
       controllerAs: '$ctrl',
       bindToController: true,
-      templateUrl: '/components/card/card-template.html'
+      templateUrl: '/base/components/row/row-template.html'
     }
   }
 
-  angular.module('app').directive('nrCard', cardDirective);
+  angular.module('app').directive('nrRow', rowDirective);
 
 }());

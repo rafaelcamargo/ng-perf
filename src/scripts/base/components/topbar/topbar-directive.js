@@ -5,7 +5,7 @@
     return {
       restrict: 'E',
       scope: {},
-      templateUrl: '/components/topbar/topbar-template.html'
+      templateUrl: '/base/components/topbar/topbar-template.html'
     }
   }
 

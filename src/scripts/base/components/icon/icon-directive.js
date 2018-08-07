@@ -1,20 +1,20 @@
 (function (){
   'use strict';
 
-  function rowDirective(){
+  function iconDirective(){
     return {
       restrict: 'E',
       transclude: true,
       scope: {
-        cssClass: '@'
+        icon: '@'
       },
       controller: function(){},
       controllerAs: '$ctrl',
       bindToController: true,
-      templateUrl: '/components/row/row-template.html'
+      templateUrl: '/base/components/icon/icon-template.html'
     }
   }
 
-  angular.module('app').directive('nrRow', rowDirective);
+  angular.module('app').directive('nrIcon', iconDirective);
 
 }());

@@ -14,7 +14,7 @@
       controller: 'rowItemController',
       controllerAs: '$ctrl',
       bindToController: true,
-      templateUrl: '/components/row-item/row-item-template.html',
+      templateUrl: '/base/components/row-item/row-item-template.html',
     }
   }
 

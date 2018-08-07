@@ -8,7 +8,7 @@
       controller: 'appMenuController',
       controllerAs: '$ctrl',
       bindToController: true,
-      templateUrl: '/components/app-menu/app-menu-template.html',
+      templateUrl: '/base/components/app-menu/app-menu-template.html',
     }
   }
 

@@ -6,7 +6,7 @@
       restrict: 'E',
       transclude: true,
       scope: {},
-      templateUrl: '/components/viewport/viewport-template.html',
+      templateUrl: '/base/components/viewport/viewport-template.html',
     }
   }
 
