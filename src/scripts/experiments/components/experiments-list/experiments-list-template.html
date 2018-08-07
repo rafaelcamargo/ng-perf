@@ -1,0 +1,21 @@
+<div class="experiments-list">
+  <nr-list>
+    <nr-row ng-repeat="experiment in $ctrl.experimentsList">
+      <nr-row-item
+        data-label="Name"
+        data-size="9"
+        data-value="experiment.name">
+      </nr-row-item>
+      <nr-row-item
+        data-label="Actions"
+        data-size="3">
+        <button
+          class="btn-primary"
+          type="button"
+          ng-click="$ctrl.goToExperiment(experiment.route)">
+          Go To Experiment
+        </button>
+      </nr-row-item>
+    </nr-row>
+  </nr-list>
+</div>
