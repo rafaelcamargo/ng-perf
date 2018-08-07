@@ -25,3 +25,12 @@ $row-item-max-size = 12
 for $size in (1..$row-item-max-size)
   .row-item-size-{$size}
     width ($size/$row-item-max-size) * 100%
+
++breakpoint('xs')
+  fk-row-item
+    float left
+    width 100%
+  & + fk-row-item
+    margin-top 12px
+  .row-item
+    width 100%
