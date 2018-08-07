@@ -18,6 +18,10 @@
           text: 'Experiments',
           icon: 'ion-erlenmeyer-flask'
         }
+      })
+      .state('experiments-garbage-collector', {
+        url: '/experiments/garbage-collector',
+        templateUrl: '/experiments/views/experiments-garbage-collector-template.html'
       });
 
     $urlRouterProvider.otherwise('/');
