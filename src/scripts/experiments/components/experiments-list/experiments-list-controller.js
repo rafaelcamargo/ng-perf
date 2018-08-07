@@ -8,6 +8,10 @@
       setExperimentList(EXPERIMENTS_LIST);
     };
 
+    $ctrl.goToExperiment = routeState => {
+      routeService.go(routeState);
+    };
+
     function setExperimentList(list){
       $ctrl.experimentsList = list;
     }

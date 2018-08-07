@@ -21,6 +21,11 @@
       expect(controller.experimentsList).toEqual(EXPERIMENTS_LIST);
     });
 
+    it('should go to experiment', () => {
+      controller.goToExperiment('routeState');
+      expect(routeService.go).toHaveBeenCalledWith('routeState');
+    })
+
   });
 
 }());
