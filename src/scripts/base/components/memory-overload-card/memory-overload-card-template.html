@@ -1,0 +1,12 @@
+<div class="memory-overload-card">
+  <nr-card data-title="Memory Overload" data-icon="ion-alert-circled">
+    <nr-row ng-repeat="row in $ctrl.form.rows">
+      <nr-row-item
+        ng-repeat="item in row"
+        data-label="{{ item.label }}"
+        data-size="3">
+        <input type="text" ng-model="item.value" />
+      </nr-row-item>
+    </nr-rows>
+  </nr-card>
+</div>
