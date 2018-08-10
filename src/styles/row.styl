@@ -8,3 +8,8 @@ nr-row
 .row
   margin 0 $row-item-padding * -1
   clearfix()
+
++breakpoint('xs')
+  nr-row
+    & + nr-row
+      margin-top 0
