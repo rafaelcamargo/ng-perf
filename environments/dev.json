@@ -1,6 +1,13 @@
 {
-  "TYPE": "dev",
+  "DEVELOPMENT": true,
+  "SERVER": {
+    "PORT": 4000,
+    "LIVE_RELOAD": true
+  },
+  "FORMSPREE": {
+    "BASE_URL": "https://formspree.io"
+  },
   "MINIFY": false,
-  "SOURCE_MAPS": true,
+  "SOURCE_MAPS": false,
   "REVISE": false
 }
