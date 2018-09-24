@@ -29,7 +29,7 @@
     },
     "vendor": {
       "files": [
-        "dependencies/angular-1.3.0-rc.0.min.js",
+        "node_modules/angular/angular.min.js",
         "node_modules/angular-ui-router/release/angular-ui-router.min.js"
       ]
     },
@@ -45,7 +45,7 @@
       "coverage": "src/scripts/**/!(*-resource|*.test).js",
       "vendor": {
         "files": [
-          "dependencies/angular-mocks.min.js"
+          "node_modules/angular-mocks/angular-mocks.js"
         ]
       }
     }
